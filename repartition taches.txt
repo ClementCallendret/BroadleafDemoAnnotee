@@ -1,0 +1,10 @@
+A faire : 
+admin :
+-Configuration -> 5 fichiers
+-Web -> 2 fichiers
+
+site :
+-Configuration -> 4 fichiers
+-Controller -> BCP de dossiers
+-Service -> 1 fichier
+-Workflow -> 1 fichier
