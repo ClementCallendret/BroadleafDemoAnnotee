@@ -38,35 +38,11 @@
                             </ul>
                         </li>
                     </ul>
+                    
                 </li>
             </ul>
 
-            <!-- Account -->
-            <ul class="nav navbar-nav navbar-right">
-
-                <!-- Anonymous Customer Actions -->
-                <th:block th:if="${customer.anonymous}">
-                    <li>
-                        <a th:href="@{/login}" th:utext="#{home.login}">Login</a>
-                    </li>
-                </th:block>
-
-                <!-- Registered Customer Actions -->
-                <th:block th:if="${!customer.anonymous}">
-                    <th:block th:replace="@{layout/partials/registeredCustomerActions}" />
-                </th:block>
-
-                <!-- Mobile Main Navigation Menu -->
-                <li class="visible-xs">
-                    <th:block th:replace="@{layout/partials/navMenu}" />
-                </li>
-
-                <!-- Locale options -->
-                <li th:replace="layout/partials/navLocaleSelector"></li>
-
-                <!-- Mini Cart -->
-                <th:block th:replace="checkout/partials/miniCart" />
-            </ul>
+           
         </div>
 
         <!-- Logo -->
