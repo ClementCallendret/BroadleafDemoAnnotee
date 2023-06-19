@@ -42,32 +42,7 @@
                 </li>
             </ul>
 
-           
-        </div>
-
-        <!-- Logo -->
-        <div class="header-logo">
-            <a class="navbar-brand withoutripple" th:href="@{/}">
-                <img class="brand-logo" th:src="@{/img/the-heat-clinic-logo-internal.png}" alt="The Heat Clinic Home">
-            </a>
-        </div>
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#right-nav">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar top-bar"></span>
-                <span class="icon-bar middle-bar"></span>
-                <span class="icon-bar bottom-bar"></span>
-            </button>
-
-            <ul class="visible-xs nav navbar-nav">
-                <th:block th:replace="checkout/partials/miniCart" />
-            </ul>
-        </div>
-
-        <div id="left-nav" class="left-nav hidden-xs collapse main-menu-wrapper">
-            <!-- Main Navigation Menu -->
-            <th:block th:replace="@{layout/partials/navMenu}" />
+           lock th:replace="@{layout/partials/navMenu}" />
         </div>
     </div>
 </nav>
